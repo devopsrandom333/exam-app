@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: "jdbc:h2:mem:testdb"
+    username: "sa"
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+server:
+  port: ${PORT}
+
+graphite:
+  host: ${GRAPHITE_HOST}
+  apiKey: ${HOSTEDGRAPHITE_APIKEY}
